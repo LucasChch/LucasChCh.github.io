@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cursos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Lucas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.png" alt="">
+            </div>
+            <h1>LUCAS CHIALCHIA</h1>
+            <h2>Programador Jr</h2>
+            <div class="redes">
+                <a href="mailto:lucas.chialchia@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/LucasChch"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lucas-chialchia-742662208/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lucas Chialchia. <br>
+            </span> Me considero una persona comprometida,
+                responsable y en constante búsqueda de
+                aprendizaje. Disfruto mucho trabajar en
+                equipo. <br>
+                Mi objetivo es poder ganar experiencia laboral
+                donde pueda crecer profesionalmente,
+                cumpliendo con los objetivos que se
+                propongan y poniendo en práctica mis
+                conocimientos</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            19-12-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            11-3165-3119
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lucas.chialchia@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Analista Programador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="./assets/Cv - Chialchia, Lucas.pdf" download class="descarga-cv">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <!-- <h3>Programación</h3> -->
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ASP.NET Core</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <!-- <h3>Habilidades Profesionales</h3> -->
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kotlin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paquete Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Metodologías Ágiles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Análisis de Sistemas</h4>
+                        <span class="casa">Instituto Superior Tecnológico Argentino, ISTEA</span>
+                        <span class="fecha">2021 - Actualidad</span>
+                        <p>Carrera Profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Electromecánica</h4>
+                        <span class="casa">Casa Salesiana Juan Segundo Fernández</span>
+                        <span class="fecha">2012 - 2018</span>
+                        <p> Educacion Secundarias</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Analista Programador</h4>
+                        <span class="casa">Accusys Technology</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Trabajo como Analista Programador Jr.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Práctica Profesionalizante</h4>
+                        <span class="casa">Ferreiros y Vilela S.A.</span>
+                        <span class="fecha">2018</span>
+                        <p>Práctica profesionalizante como Técnico en
+                            Electromecánica. Operario de maquinas y
+                            mantenimiento
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Cursos -->
+    <section id="cursos" class="cursos">
+        <div class="contenido-seccion">
+            <h2>Cursos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/python.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Programación en Python</h3>
+                        <p>UNSAM</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ed-it.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Base de Datos SQL</h3>
+                        <p>Educacion IT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/argPrograma.png" alt="">
+                    <div class="overlay">
+                        <h3>Se Programar</h3>
+                        <p>Argentina Programa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:lucas.chialchia@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/LucasChch"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-chialchia-742662208/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
